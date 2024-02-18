@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+
+{%block main%}
+
+<div class = grid-container> 
+    <div class = image-container> 
+        <div class = center> 
+            <img src="{{url_for('static', filename='profilephoto.jpg') }}" />
+            <h1>Jada-Ann Vite</h1>
+            <p> @jadaannv </p>
+            <p> Beausejour, St.Lucia </p>
+            <p> {{date}}</p>
+        </div>
+    </div> 
+
+    <div class = info-container>
+        <p id = info>I am a 23 year old Chemistry student with a passion for both chemistry and information technology.
+            I am not completely clear on my career goal, however I know it includes one of the two subjects or
+            both. 
+        </p>
+        <div class = stats>
+            <ul>
+                <li> <div class = profile-num> 8 </div> Posts </li>
+                <li> <div class = profile-num> 200 </div> Following </li>
+                <li> <div class = profile-num> 350 </div> Followers </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = button-container>
+        <button id = 'btn'> Follow </button>
+    </div>
+
+</div>
+
+{% endblock %}
+
+
